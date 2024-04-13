@@ -1,0 +1,11 @@
+@import './base.css';
+
+
+:root {
+  --page-height: calc(100vh - 230px);
+
+}
+.w1200{
+  width: 1200px;
+  margin: 0 auto;
+}
