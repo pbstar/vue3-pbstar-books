@@ -8,13 +8,14 @@
     "build": "vite build --mode pro",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build --force"
+    "type-check": "vue-tsc --build --force",
+    "start": "json-server server/db.json  --static server/public --watch"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
     "axios": "^1.6.8",
     "element-plus": "^2.6.3",
-    "json-server": "^1.0.0-alpha.23",
+    "json-server": "^1.0.0-beta.1",
     "pinia": "^2.1.7",
     "sass": "^1.72.0",
     "vue": "^3.4.21",
