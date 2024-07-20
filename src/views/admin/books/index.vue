@@ -96,7 +96,7 @@
       <el-pagination
         background
         v-model:current-page="searchData._page"
-        :page-size="searchData._limit"
+        :page-size="searchData._per_page"
         layout="prev, pager, next"
         :total="total"
         @change="changeTable"
@@ -157,7 +157,7 @@ const searchData = ref({
   unit: "",
   text: "",
   _page: 1,
-  _limit: 99,
+  _per_page: 10,
 });
 const total = ref(0);
 
@@ -177,7 +177,6 @@ const formData = ref({
 
 onMounted(() => {
   typeList.value = userBook.types;
-  getTotal();
   getTableData();
 });
 const submitForm = () => {
@@ -186,12 +185,8 @@ const submitForm = () => {
 };
 const getTableData = () => {
   getList(searchData.value).then((res) => {
-    tableData.value = res;
-  });
-};
-const getTotal = () => {
-  getList().then((res) => {
-    total.value = res.length;
+    tableData.value = res.data;
+    total.value = res.items;
   });
 };
 const changeTable = (page) => {
