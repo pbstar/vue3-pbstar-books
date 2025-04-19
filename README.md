@@ -1,4 +1,4 @@
-vue3-pbstar-books 是一个图书主题的 pc 端网站，该项目有前台（首页、全部书籍页、书籍分类页、书籍详情页、关于页和登录页）和后台（图书馆里）两个模块采用 Vue3、Element-Plus、TypeScript、Pinia、Vite 和 json-server 等技术。
+vue3-pbstar-books 是一个图书主题的 pc 端网站，该项目有前台（首页、全部书籍页、书籍分类页、书籍详情页、关于页和登录页）和后台（图书管理）两个模块采用 Vue3、Element-Plus、TypeScript、Pinia、Vite 和 json-server 等技术。
 
 ## 一、项目要求
 
